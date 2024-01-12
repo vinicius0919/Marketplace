@@ -1,0 +1,102 @@
+body {
+  height: 100vh;
+}
+
+#root {
+  position: absolute;
+  width: 98.4vw;
+  height: 100vh;
+  justify-content: center;
+  text-align: center;
+}
+
+.tittlePage {
+  margin-top: 50px;
+}
+
+.footerApp {
+  margin-top: 50vh;
+  position: relative;
+  /* Set a positioning value other than static */
+  height: 50vh;
+  width: 100vw;
+  background-color: #6f7357;
+}
+
+.productTittle {
+  width: fit-content;
+}
+
+.listProducts {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  /* Permite que os elementos quebrem para a próxima linha */
+  justify-content: center;
+  /* Centraliza os elementos horizontalmente */
+}
+
+.itemlist {
+  width: 200px;
+  /* Defina a largura máxima de cada item */
+  margin: 10px;
+  /* Adicione margem entre os itens */
+  text-align: center;
+  background-color: aliceblue;
+  padding: 10px;
+}
+
+.imgProduct {
+  width: 100%;
+  /* Ocupa toda a largura disponível dentro do item */
+  height: auto;
+  /* Mantém a proporção da imagem */
+}
+
+.formInsertProducts {
+  display:relative;
+  background-color: #6f735771;
+  width: 60vw;
+  border-radius: 15px;
+  padding: 20px 0px 10px 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+.labelInsertProducts {
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  text-shadow: 1px 1px 3px black;
+}
+
+.formInsertProducts input {
+  width: 90%;
+  padding: 0.5rem;
+  border-radius: 15px;
+}
+.formInsertProducts button{
+  width: 100px;
+  padding:0.5rem;
+  font-weight:bold;
+  background-color: #009719;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+
+}
+@media screen and (max-width:800px) {
+
+  .formInsertProducts {
+    width: 90vw;
+    border-radius: 15px;
+  }
+
+  .formInsertProducts input {
+    width: 80vw;
+  }
+}
